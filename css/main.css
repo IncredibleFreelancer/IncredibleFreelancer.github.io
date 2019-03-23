@@ -1,0 +1,573 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.55em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.001em;
+}
+
+h1 {
+	font-size: 45px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+	outline: none;
+}
+
+.btn {
+	text-transform: uppercase;
+	color: #fff;
+	background: #e84545;
+	border-radius: 2px;
+	padding: 12px 0;
+	border: 2px solid #e84545;
+	width: 200px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background: none;
+	color: #e84545;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+/*---------- Header start ----------*/
+.header {
+	background: #000;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.header:after {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	opacity: 0.2;
+	animation: transform 33s infinite;
+}
+
+.header__overlay {
+	padding-bottom: 243px;
+	position: relative;
+	z-index: 1;
+}
+
+.logo , .nav__link {
+	text-transform: uppercase;
+}
+
+.logo {
+	display: block;
+	margin: 27px 0;
+	font-size: 30px;
+}
+
+.logo:focus {
+	outline: none;
+}
+
+.logo span {
+	font-weight: 700;
+	color: #626fe4;
+}
+
+.nav {
+	margin-top: 39px;
+	justify-content: flex-end;
+}
+
+.nav__menu {
+	width: 580px;
+	justify-content: space-between;
+}
+
+.nav__link {
+	color: #fff;
+	font-size: 14px;
+	padding: 36px 29px; 
+	letter-spacing: 0.02em;
+}
+
+.nav__item:first-child .nav__link {
+	padding-left: 0;
+}
+
+.nav__item:last-child .nav__link {
+	padding-right: 0;
+}
+
+.nav__link:hover {
+	color: #9d9b9d;
+	border-bottom: 3px solid #9d9b9d;
+}
+
+.nav__link:active {
+	color: #626fe4;
+	border-bottom: 3px solid #626fe4;
+}
+
+/*------------------------------------*/
+/*------------ Gamburger start-------------*/
+/*------------------------------------*/
+
+/*------------------------------------*/
+/*------------ Gamburger end-------------*/
+/*------------------------------------*/
+
+
+.line {
+	border-bottom: 1px solid #53545c;
+}
+
+.offer {
+	margin-top: 183px;
+	text-align: center;
+}
+
+.offer__text {
+	margin: 29px auto 28px;
+	line-height: 1.53em;
+	font-size: 22px;
+	max-width: 570px;
+}
+
+.offer__btn {
+	position: relative;
+}
+
+.offer__btn:after {
+	position: absolute;
+	content: ' ';
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid rgba(0 , 0 , 0 , 0.1);
+	top: 0;
+	left: 0;
+	animation: offerbtn 2s infinite;
+}
+
+.offer__btn:hover {
+	border: 2px solid #fff;
+}
+
+.offer__btn:active {
+	background: #fff;
+}
+/*---------- Header end ----------*/
+
+/*---------- Services start ----------*/
+.services {
+	padding: 53px 0;
+}
+
+.service {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.service__title , .service__text {
+	font-size: 14px;
+}
+
+.service__title {
+	margin: 31px 0 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.service__text {
+	color: #6c7279;
+	max-width: 310px;
+	margin: 0 auto;
+}
+/*---------- Services end ----------*/
+
+/*---------- Pictures start ----------*/
+.pictures {
+	padding: 42px 0 130px;
+}
+
+.picture {
+	margin-top: 26px;
+	position: relative;
+}
+
+.picture__overlay {
+	flex-direction: column;
+	color: #fff;
+	position: absolute;
+	background: rgba(232 , 69 , 69 , 0.9);
+	width: 270px;
+	height: 211px;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.picture__content {
+	text-align: center;
+}
+
+.picture__name , .picture__text {
+	font-size: 14px;
+	margin: 0;
+}
+
+.picture__name {
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+
+.picture__text {
+	text-transform: capitalize;
+}
+
+.picture__overlay:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.picture__overlay {
+	transition: all 0.3s ease-in;
+}
+
+/*---------- Pictures end ----------*/
+
+/*---------- People start ----------*/
+.people {
+	background: #f1f2fd;
+	padding: 125px 0 117px;
+}
+
+.person__name {
+	margin-top: 25px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 1.1em;
+}
+
+.person__prof {
+	color: #e84545;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.person__text {
+	display: block;
+	margin-top: 19px;
+	color: #6c7279;
+}
+
+.person__links {
+	margin-top: 26px;
+}
+
+.person__link {
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #e8ecee;
+	justify-content: center;
+	align-items: center;
+	margin-right: 4px;
+}
+
+.person__link:hover .person__social {
+	transform: rotate(360deg);
+	transition: all 0.4s ease-in;
+}
+
+.person__link:hover {
+	box-shadow: 0 0 20px rgba(98 , 111 , 228 , 1);
+	border-radius: 50%;
+}
+/*---------- People end ----------*/
+
+/*---------- xyz start ----------*/
+.col_s {
+	padding: 0;
+}
+
+.superbia__workspace {
+	height: 500px;
+	background: url(../img/cofee.jpg) no-repeat top right / cover;
+}
+
+.superbia__content {
+	padding: 132px 0 0 85px;
+	color: #fff;
+	background: #53354a;
+	height: 100%;
+}
+
+.superbia__title {
+	font-size: 36px;
+	max-width: 515px;
+	line-height: 1.18em;
+	font-style: italic;
+}
+
+.superbia__text {
+	display: block;
+	margin: 30px 0 0 3px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+/*---------- xyz end ----------*/
+
+/*---------- load start ----------*/
+.download {
+	padding: 94px 0 100px;
+	text-align: center;
+}
+
+.download__title{
+	font-weight: 700;
+	font-size: 28px;
+	text-transform: capitalize;
+}
+
+.lower {
+	text-transform: lowercase;
+}
+
+.download__text {
+	display: block;
+	margin: 10px 0 36px;
+	color: #2d3033;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.download__btn {
+	width: 280px;
+}
+
+.download__btn:active {
+	box-shadow: 0 0 20px rgba(232 , 69 , 69 , 1);
+}
+/*---------- load end ----------*/
+
+/*---------- footer start ----------*/
+.info {
+	background: #3a3e64;
+	padding: 87px 0 60px;
+	border-bottom: 12px solid #313454;
+}
+
+.info__content {
+	text-align: center;
+}
+
+.info__title {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.info__address , .info__copy , .info__text {
+	display: block;
+	color: #888a9d;
+}
+
+.info__address , .info__copy {
+	margin: 0 auto;
+	font-size: 14px;
+	text-transform: capitalize;
+	max-width: 170px;
+}
+
+.info__address {
+	margin-top: 10px;
+}
+
+.info__address span {
+	text-transform: uppercase;
+}
+
+.info__copy {
+	margin-top: 18px;
+	max-width: 320px;
+}
+
+.info__copy .y {
+	color: #df4547;
+}
+
+.info__copy .name {
+	color: #fff;
+}
+/*---------- footer end ----------*/
+
+/* Media Queries */
+/*992-1200*/
+@media screen and (max-width: 1200px) { 
+	.people {
+		padding-bottom: 77px;
+	}
+
+	.person {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.person__text{
+		text-align: left;
+	}
+
+	.person__links {
+		justify-content: center;
+	}
+
+	.superbia__content {
+		padding: 80px 20px 0 20px;
+	}
+
+	.picture {
+		justify-content: center;
+	}
+}
+
+/*768-992*/
+@media screen and (max-width: 992px) { 
+	.info__content_md {
+		margin-top: 20px;
+	}
+
+	.offer__btn:after , .header:after {
+		animation: none;
+	}
+}
+
+/*576-768*/
+@media screen and (max-width: 768px) { 
+	.nav {
+		display: none;
+	}
+
+	.gum {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 30px;
+	}
+
+	.superbia__content {
+		padding: 60px;
+	}
+
+	.info__content_sm .info__title {
+		margin-top: 20px;
+	}
+
+	.info__content_sm .info__copy {
+		margin-top: 10px;
+	}
+
+	.picture__img {
+		width: 240px;
+	}
+}
+
+/*320-768*/
+@media screen and (max-width: 576px) {
+	.header__overlay {
+		padding-bottom: 100px;
+	}
+
+	.offer {
+		margin-top: 80px;
+	}
+
+	.offer__title {
+		font-size: 35px;
+	}
+
+	.offer__text {
+		font-size: 19px;
+		max-width: 310px;
+	}
+
+	.services {
+		padding-top: 83px;
+	}
+
+	.service {
+		margin-top: 40px;
+	}
+
+	.pictures {
+		padding-bottom: 65px;
+	}
+	
+	.people	{
+		padding: 65px 0 25px;
+	}
+
+	.superbia__workspace {
+		background-position: 70%;
+	}
+
+	.superbia__content {
+		padding: 70px 20px;
+	}
+}
+
+@keyframes transform {
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes offerbtn {
+	100% {
+		border-width: 195px;
+	}
+}
