@@ -149,7 +149,99 @@ button, button:hover, button:focus, button:active
 /*------------------------------------*/
 /*------------ Gamburger start-------------*/
 /*------------------------------------*/
+.menu-g__block {
+	display: none;
+	justify-content: center;
+	position: fixed;
+	top: 3vh;
+	right: 5%;
+	z-index: 2;
+}
 
+.menu-g__nav {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	height: auto;
+	width: 120px;
+	background-color: #626fe4;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 10px;
+	border-radius: 50px 0 50px 50px;
+	transform-origin: top;
+	transform: scaleY(0) translateX(20%);
+	opacity: 0;
+	-webkit-transition: 0.3s; 
+	-moz-transition: 0.3s;
+}
+
+.menu-g__nav_active {
+	opacity: 1;
+	transform: scaleY(1) translateX(20%);
+}
+
+.menu-g__link {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 5px 0;
+}
+
+.menu-g__link:active {
+	color: #53354a;
+}
+
+.menu-g__btn {
+	width: 50px;
+	height: 50px;
+	background-color: #626fe4;
+	border-radius: 50%;
+	position: relative;
+}
+
+.menu-g__btn:focus {
+	outline: none;
+}
+
+.menu-g__btn span ,
+.menu-g__btn span::before,
+.menu-g__btn span::after {
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 50%;
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #222;
+}
+
+.menu-g__btn span::before,
+.menu-g__btn span::after {
+	content: ' ';
+	display: block;
+	transition: 0.2s;
+}
+
+.menu-g__btn span::before {
+	transform: translateY(-5px);
+}
+
+.menu-g__btn span::after {
+	transform: translateY(5px);
+}
+
+.menu-g__btn_active span {
+	height: 0;
+}
+
+.menu-g__btn_active span::before {
+	transform: rotate(45deg);
+}
+
+.menu-g__btn_active span::after {
+	transform: rotate(-45deg);
+}
 /*------------------------------------*/
 /*------------ Gamburger end-------------*/
 /*------------------------------------*/
@@ -446,6 +538,7 @@ button, button:hover, button:focus, button:active
 /* Media Queries */
 /*992-1200*/
 @media screen and (max-width: 1200px) { 
+
 	.people {
 		padding-bottom: 77px;
 	}
@@ -481,6 +574,14 @@ button, button:hover, button:focus, button:active
 	.offer__btn:after , .header:after {
 		animation: none;
 	}
+
+	.info__content {
+		margin-top: 40px;
+	}
+
+	.info {
+		padding-top: 47px;
+	}
 }
 
 /*576-768*/
@@ -489,10 +590,20 @@ button, button:hover, button:focus, button:active
 		display: none;
 	}
 
-	.gum {
+	.menu-g__block {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
 		display: flex;
-		justify-content: flex-end;
-		margin-top: 30px;
+	}
+
+	.menu-g__block {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 	}
 
 	.superbia__content {
@@ -507,12 +618,12 @@ button, button:hover, button:focus, button:active
 		margin-top: 10px;
 	}
 
-	.picture__img {
+	.picture__img , .picture__overlay {
 		width: 240px;
 	}
 }
 
-/*320-768*/
+/*320-576*/
 @media screen and (max-width: 576px) {
 	.header__overlay {
 		padding-bottom: 100px;
