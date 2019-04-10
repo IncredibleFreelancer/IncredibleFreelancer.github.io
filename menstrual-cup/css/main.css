@@ -1,0 +1,407 @@
+/*============= Connecting fonts start ============= */
+@import url(./fonts.css);
+/*============= Connecting fonts end ============= */
+
+/*============= Specifiction start ============= */
+body {
+    font-family: 'Harmonia Sans Pro Cyr',
+    sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container,
+.container-nav {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.container-nav {
+    width: 1150px;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+ul,
+li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+  
+}
+
+h2 {
+    
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+/*============= Specifiction end ============= */
+
+/*============= Header start ============= */
+.header {
+    border-top: 35px solid #4da93a;
+    width: 100%;
+}
+
+.account {
+    background: #4da93a;
+    width: 200px;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 0 0 4px 4px;
+    margin-left: auto;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.account a {
+    color: #fff;
+}
+
+.account__item {
+    display: block;
+    border-bottom: 1px solid transparent;
+}
+
+.account__item i {
+   font-size: 18px;
+   margin-left: 5px;
+}
+
+.account__item:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav__item {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    display: block;
+    margin-top: -15px;
+    max-width: 340px;
+}
+
+.search {
+    margin-top: -25px;
+}
+
+.search__desc {
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.help {
+    margin-right: 5px;
+}
+
+.chat {
+    margin-left: 5px;
+}
+
+.search__desc {
+    font-weight: 600;
+    font-size: 22px;
+    color: #555;
+}
+
+.search__desc a {
+    color: #555;
+}
+
+.search__input {
+    height: 34px;
+    width: 400px;
+    font-size: 20px;
+    color: #b1b1b1;
+    border: 2px solid #b2b2b2;
+    padding-left: 10px;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #b1b1b1;
+    font-size: 20px;
+}
+/* webkit */
+.search__input::-moz-placeholder {
+    color: #b1b1b1;
+     font-size: 20px;
+}
+/* Firefox 19+ */
+.search__input:-moz-placeholder {
+    color: #b1b1b1;
+    font-size: 20px;
+}
+/* Firefox 18- */
+.search__input:-ms-input-placeholder {
+    color: #b1b1b1;
+     font-size: 20px;
+}
+/* IE */
+
+.search__btn {
+    height: 34px;
+    width: 34px;
+    background: #c5c7c6;
+    font-size: 0;
+    border: none;
+}
+
+.search__btn:hover {
+    cursor: pointer;
+}
+
+.nav__basket {
+    background: url(../img/basket.jpg) no-repeat center center / cover;
+    width: 52px;
+    height: 40px;
+}
+
+.nav__buy {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background: #dadcdb;
+    color: #000;
+    font-weight: 700;
+    padding-left: 25px;
+    line-height: 40px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.nav__buy i {
+    position: absolute;
+    font-size: 16px;
+    top: 13px;
+    right: 20px;
+}
+
+.nav__buy::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background: #4da93a;
+    height: 38px;
+    width: 0%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.nav__buy:hover::after{
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.nav__buy:hover {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.nav__menu,
+.nav__second-menu {
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+.nav__menu {
+    border-bottom: 1px dashed #000;
+}
+
+.nav__link a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    padding: 5px;
+}
+
+.nav__link a::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #000;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+
+.nav__link a:hover::after {
+    transform: scaleX(1);
+    transition: all .3s ease;
+}
+
+.nav__link a:active {
+    opacity: .6;
+}
+
+.nav__second-menu .nav__link a {
+    font-size: 20px;
+}
+
+.nav__second-menu .nav__link a::after {
+    display: none;
+}
+
+.nav__second-menu .nav__link a:hover {
+    color: #4da338;
+}
+/*============= Header end ============= */
+
+/*============= Reasons start ============= */
+.line {
+    border-top: 3px solid #4da93a;
+}
+
+.reasons__list {
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+
+/*1 block*/
+.reasons__item {
+    position: relative;
+    max-width: 600px;
+}
+
+.reasons__text {
+    font-size: 16px;
+}
+
+.reasons__item:nth-child(1) .reasons__photo {
+    max-width: 600px;
+}
+
+.reasons__desc {
+    position: absolute;
+    top: 80px;
+    background: #fff;
+}
+
+.reasons__title {
+    max-width: 160px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #000;
+}
+
+.reasons__desc .reasons__text {
+    margin-top: 7px;
+    max-width: 330px;
+    text-align: center;
+}
+
+/*2 block*/
+.reasons__item:nth-child(2) {
+    max-width: 550px;
+}
+
+.reasons__item:nth-child(2) .reasons__photo {
+    max-width: 550px;
+}
+
+.reasons__item:nth-child(2) .reasons__desc {
+    top: 198px;
+    right: 0;
+}
+/*============= Reasons end ============= */
+
+
+
+
+
+
+
+
+
+
+
+/*Adaptivity*/
+@media screen and (max-width: 1200px){
+    .container {
+        width: 990px;
+    }
+
+    .container-nav {
+        width: 850px;
+    }
+
+    .logo__img {
+        max-width: 280px;
+    }
+
+    .search__input {
+        width: 200px;
+    }
+
+    .nav__link a {
+        font-size: 21px;
+    }
+
+    .nav__second-menu .nav__link a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+/*/////////////To be continued
+/////////
+////
+//*/

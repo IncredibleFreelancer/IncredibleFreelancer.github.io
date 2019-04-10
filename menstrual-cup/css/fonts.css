@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr';
+    src: url('../fonts/HarmoniaSansProCyr-Light.eot');
+    src: url('../fonts/HarmoniaSansProCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HarmoniaSansProCyr-Light.woff2') format('woff2'),
+        url('../fonts/HarmoniaSansProCyr-Light.woff') format('woff'),
+        url('../fonts/HarmoniaSansProCyr-Light.ttf') format('truetype'),
+        url('../fonts/HarmoniaSansProCyr-Light.svg#HarmoniaSansProCyr-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvantGardeGothicC';
+    src: url('../fonts/AvantGardeGothicC.eot');
+    src: url('../fonts/AvantGardeGothicC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvantGardeGothicC.woff2') format('woff2'),
+        url('../fonts/AvantGardeGothicC.woff') format('woff'),
+        url('../fonts/AvantGardeGothicC.ttf') format('truetype'),
+        url('../fonts/AvantGardeGothicC.svg#AvantGardeGothicC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
