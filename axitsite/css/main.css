@@ -128,7 +128,9 @@ a, button, input , li {
  	
 .nav__item {
 	margin: 0 8px;
-	padding: 10px 0; 
+	padding: 10px 0;
+	border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .nav__link {
