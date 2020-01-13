@@ -1,0 +1,231 @@
+@import url(../fonts/fonts.css);
+
+/* =================> Specification Start <============= */
+body {
+	font-family: 'Montserrat';
+	color: #212121;
+	letter-spacing: .02em;
+}
+
+a , a:hover , a:active {
+	text-decoration: none;
+	outline: none;
+	color: #212121;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.container {
+	width: 1410px;
+	margin: 0 auto;
+}
+
+.btn {
+	background-color: #4dc000;
+	border: 2px solid #4dc000;
+	border-radius: 12px;
+	padding: 20px 0 20px;
+}
+/* ==================> Specification End <============== */
+/* ===================================================== */
+/* ==================> Header Start <=================== */
+.header {
+	position: relative;
+	padding: 64px 0 300px;
+	background: #fff url(../img/header-bg1.png) no-repeat right 80px ;
+	-webkit-background-size: 50%;
+	background-size: 50%;
+}
+
+.nav {
+	justify-content: flex-start;
+	z-index: 0;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .01em;
+}
+
+.nav__menu {
+	margin-left: 34px;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.nav__link {
+	position: relative;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: .01em;
+}
+
+.nav__link::before {
+	z-index: -1;
+	position: absolute;
+	content: ' ';
+	width: 0%;
+	height: 7px;
+	bottom: 1px;
+	background: #caebff;
+	opacity: 0;
+}
+
+.nav__link:hover::before {
+	width: 100%;
+	opacity: 1;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.nav__link:active {
+	color: #4dc000;
+	transition: .2s;
+}
+
+.nav__link:active::before {
+	opacity: 0;
+	transition: .2s;
+}
+
+.offer {
+	margin-top: 130px;
+	z-index: 999;
+}
+
+.offer__title {
+	position: relative;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+
+.offer__title::before {
+	z-index: -1;
+	position: absolute;
+	content: ' ';
+	width: 348px;
+	height: 14px;
+	bottom: 6px;
+	background: #caebff;
+}
+
+.offer__desc {
+	margin-top: 60px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.15em;
+}
+
+.offer__btn {
+	position: relative;
+	margin-top: 60px;
+	display: block;
+	padding-left: 70px;
+	max-width: 380px;
+	font-size: 24px;
+	color: #ffffff;
+	font-family: 'Circe';
+	font-weight: 400;
+}
+
+.offer__btn::after {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 18px;
+	top: 50%;
+	margin-top: -9px;
+	right: 24%;
+	opacity: 0;
+	background: url(../img/right-arrow.svg) no-repeat center center / cover;
+	animation: arrow 1.2s infinite;
+}
+
+.offer__btn:hover {
+	background: #212121;
+	color: #fff;
+	transition: .3s;
+}
+
+.offer__btn:active {
+	opacity: .8;
+	transition: .3s;
+}
+
+.bg-elem {
+	position: absolute;
+}
+
+.bg-elem1 {
+	z-index: 1;
+	top: 120px;
+	left: 50%;
+	margin-left: -160px;
+	width: 300px;
+	height: 410px;
+	background: url(../img/human1.png) no-repeat center center / cover;
+}
+
+.bg-elem2 {
+	z-index: 2;
+	top: 620px;
+	left: 50%;
+	margin-left: 10px;
+	width: 80px;
+	height: 80px;
+	background: url(../img/book1.png) no-repeat center center / cover;
+}
+
+.bg-elem3 {
+	z-index: 3;
+	top: 240px;
+	left: 50%;
+	margin-left: 110px;
+	width: 240px;
+	height: 490px;
+	background: url(../img/human2.png) no-repeat center center / cover;
+}
+
+.bg-elem4 {
+	z-index: 4;
+	top: 100px;
+	left: 50%;
+	margin-left: 350px;
+	width: 320px;
+	height: 640px;
+	background: url(../img/human3.png) no-repeat center center / cover;
+}
+
+.bg-elem5 {
+	z-index: 5;
+	top: 330px;
+	left: 50%;
+	margin-left: 520px;
+	width: 80px;
+	height: 80px;
+	background: url(../img/book2.png) no-repeat center center / cover;
+}
+
+/* ==================> Header End <===================== */
+/* ===================================================== */
+/* ==================> Animations Start <=============== */
+@keyframes arrow {
+	100% {
+		right: 10%;
+		opacity: 1;
+	}
+}
+/* ==================> Animations End <================== */
